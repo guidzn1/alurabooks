@@ -1,0 +1,152 @@
+
+.carrossel__titulo{
+    color: var(--laranja);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0 ;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 1em 0;
+}
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    margin-bottom: 0.5em;
+    position: initial;
+    align-self: flex-start;
+    
+}
+.card__descricao img{
+    text-align: center;
+    padding: 0 0 0 0em;
+}
+.descricao__imagem{
+    text-align: center;
+    padding: 4em 5em 3em 2.4em;
+    margin: 1.5em 0;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.botoes{
+    display: flex;
+    
+}
+.card{
+    margin: 0.5em;
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+}
+.descricao__titulo{
+    color: var(--laranja);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.descricao__titulo-livro{
+    color: #002F52;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0.5em 0;
+}
+.descricao__texto{
+    color: rgba(0, 0, 0, 0.85);
+        font-family: var(--fonte-principal);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.botoes__itens{
+    margin: 0 0.5em;
+    
+
+}
+
+.botoes__ancora{
+    background-color: var(--laranja);
+    padding: 1em 3.0em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1em 0 1.0em 0;
+}
+
+.botao-saiba-mais,
+.swiper-slide img,
+ .carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-saiba-mais:hover,
+.swiper-slide img:hover,
+ .carousel-item:hover {
+    transform: scale(1.1); /* Ajuste o fator de escala conforme necessário */
+}
+.botoes__ancora {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.botoes__ancora.azul-degrade {
+    background-color: var(--azul-degrade);
+}
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 80%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 80%;
+        margin: 1em auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 0;
+        padding: 0 2em;
+    }
+    .swiper{
+        width: 90%;
+    }
+    .card{
+        margin: 0 3em;
+    }
+    
+}
+
